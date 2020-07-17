@@ -25,8 +25,7 @@ class Rectangle:
         4. Raises NotImplementedError if one tries to check for r1 < r2, and r2 is not a Rectangle Object
     '''
     def __init__(self, width, height):
-        self.width = width #properties
-        self.height = height
+        self.width  , self.height = width , height 
 
 
     def area(self): #method
