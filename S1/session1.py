@@ -27,23 +27,50 @@ class Rectangle:
     def __init__(self, width, height):
         self.width = width #properties
         self.height = height 
+    
+    @property
+    def width(self):
+        return self.width
+
+    @width.setter
+    def width(self, width):
+        if width <=0:
+            raise ValueError("Width must be positive")
+        else:
+            self.width = width
+    
+    
+    @property
+    def height(self):
+        return self.height
+    
+    
+    @height.setter
+    def height(self, height):
+        if height <=0:
+            raise ValueError("Height must be positive")
+        else:
+            self.height = height
 
 
     def area(self): #method
         return self.width * self.height
-
+    
     
     def perimeter(self):
         return 2*(self.width + self.height)
-
+    
     
     def __lt__(self, other):
         if isinstance(other, Rectangle):
             return self.area() == other.area()
-            
-            
+    
+    
     def __repr__(self):
         return f'Rectangle({self.width}, {self.height})'
-            
-            
-            
+    
+    
+    def __str__(self):
+        return f'Rectangle: width={self.width}, height={self.height}'
+    
+    
