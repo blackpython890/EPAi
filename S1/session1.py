@@ -33,7 +33,7 @@ class Rectangle:
         return self._width
     
     
-    
+    @width.setter
     def width(self, width):
         if self._width <=0 :
             raise e_info ("Width must be positive")
@@ -41,12 +41,12 @@ class Rectangle:
             self._width = width
     
     
-    
+    @property
     def height(self):
         return self._height
     
     
-    
+    @height.setter
     def height(self, height):
         if self._height <=0:
             raise e_info ("Height must be positive")
@@ -83,4 +83,6 @@ class Rectangle:
         else:
             return False
     
-    
+    def __com__(self,other):
+        if not isintance(other,Rectangle):
+            raise NotImplemented
