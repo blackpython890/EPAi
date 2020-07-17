@@ -63,7 +63,7 @@ class Rectangle:
     
     
     def __repr__(self):
-        return f'Rectangle({self.width}, {self.height})'
+        return f'Rectangle({self._width}, {self._height})'
     
     
     def __str__(self):
@@ -79,7 +79,7 @@ class Rectangle:
    
     def __eq__(self,other):
         if  isinstance(other,Rectangle):
-            return self.width==other.width and self.height=other.height
+            return self._width == other._width and self._height == other._height
         else:
              return False
     
