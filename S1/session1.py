@@ -76,7 +76,7 @@ class Rectangle:
             return self.area() < other.area()
         else:
             return NotImplemented
-   
+    
     def __eq__(self,other):
         if  isinstance(other,Rectangle):
             return self._width == other._width and self._height == other._height
