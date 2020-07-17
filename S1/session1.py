@@ -36,7 +36,7 @@ class Rectangle:
     @width.setter
     def width(self, width):
         if self._width <=0 :
-            raise ValueError("Width must be positive")
+            raise e_info ("Width must be positive")
         else:
             self._width = width
     
@@ -49,7 +49,7 @@ class Rectangle:
     @height.setter
     def height(self, height):
         if self._height <=0:
-            raise ValueError("Height must be positive")
+            raise e_info ("Height must be positive")
         else:
             self._height = height
     
