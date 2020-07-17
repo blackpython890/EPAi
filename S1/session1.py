@@ -55,16 +55,11 @@ class Rectangle:
     
     
     def area(self): #method
-        return self.width * self.height
+        return self._width * self._height
     
     
     def perimeter(self):
-        return 2*(self.width + self.height)
-    
-    
-    def __lt__(self, other):
-        if isinstance(other, Rectangle):
-            return self.area() == other.area()
+        return 2*(self._width + self._height)
     
     
     def __repr__(self):
@@ -73,5 +68,19 @@ class Rectangle:
     
     def __str__(self):
         return f'Rectangle: width={self.width}, height={self.height}'
+        
+        
+    
+    def __lt__(self, other):
+        if isinstance(other, Rectangle):
+            return self.area() < other.area()
+        else:
+            return NotImplemented
+   
+    def __eq__(self,other):
+        if  isinstance(other,Rectangle):
+            return self.width==other.width and self.height=other.height
+        else:
+             return False
     
     
