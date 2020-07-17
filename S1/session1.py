@@ -86,3 +86,5 @@ class Rectangle:
     def __com__(self,other):
         if not isintance(other,Rectangle):
             raise NotImplemented
+        else:
+            return self.area() < other.area()
