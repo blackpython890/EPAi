@@ -1,6 +1,6 @@
 from typing import List
 import time
-import gc
+import weakref
 
 # Here in this code we will be leaking memory because we are creating cyclic reference. 
 # Find that we are indeed making cyclic references.
@@ -25,7 +25,7 @@ class SomethingNew(object):
 
 def add_something(collection: List[Something], i: int):
     something = Something()
-    something.something_new = SomethingNew(i, something)
+    something.something_new = SomethingNew(i, weakref.ref(something))
     collection.append(something)
 
 
@@ -33,13 +33,10 @@ def reserved_Function():
     # to be used in future if required
     pass
 
-'''
+
 def clear_memory(collection: List[Something]):
     # you probably need to add some comment here
-    collection.clear()'''
-
-def clear_memory():
-    gc.clear()
+    collection.clear()
 
 def critical_function():
     collection = list()
