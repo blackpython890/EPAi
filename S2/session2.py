@@ -16,7 +16,7 @@ class Something(object):
         self.something_new = None
 
 
-    def __repr__self):
+    def __repr__(self):
         return 'Something Class'
 
 
