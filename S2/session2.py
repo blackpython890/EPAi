@@ -13,6 +13,9 @@ class Something(object):
     def __init__(self):
         super().__init__()
         self.something_new = None
+        
+    def __repr_(self):
+        return 'Something Class'
 
 
 class SomethingNew(object):
@@ -21,6 +24,9 @@ class SomethingNew(object):
         super().__init__()
         self.i = i
         self.something = something
+        
+    def __repr__(self):
+        return 'SomethingNew Class'
 
 
 def add_something(collection: List[Something], i: int):
