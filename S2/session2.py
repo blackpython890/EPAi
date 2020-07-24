@@ -27,14 +27,14 @@ def add_something(collection: List[Something], i: int):
     something.something_new = SomethingNew(i, something)
     collection.append(something)
 
+
 def reserved_Function():
     # to be used in future if required
     pass
 
+
 def clear_memory(collection: List[Something]):
     # you probably need to add some comment here
-
-    
     collection.clear()
 
 
@@ -64,6 +64,4 @@ def compare_strings_old(n):
 # YOU NEED TO CHANGE THIS PROGRAM
 def compare_strings_new(n):
     time.sleep(6) # remove this line, this is just to simulate your "slow" code
-
-
 
