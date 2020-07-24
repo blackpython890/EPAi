@@ -1,4 +1,9 @@
 
+  ###### Author Info :
+   
+- Mail : [jagatabhay@gmail.com](jagatabhay@gmail.com)
+
+
 # Session2 - Object Mutability and Interning
 
 ## Objective : To pass the test cases given in test_session2.py
@@ -111,9 +116,6 @@
    
    ---
    
-   Author Info :
-   
-- Facebook -- [md.shakiluzzaman](https://www.facebook.com/shakil.uzzaman.5/)
 
 
   
