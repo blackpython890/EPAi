@@ -8,13 +8,15 @@ import weakref
 # We have added a function called "clear_memory" but it is not able to do it's job. Fix it. 
 # Refer to test_clear_memory Test in test_session2.py to see how we're crudely finding that
 # this code is sub-optimal.
+
 class Something(object):
 
     def __init__(self):
         super().__init__()
         self.something_new = None
-        
-    def __repr_(self):
+
+
+    def __repr__self):
         return 'Something Class'
 
 
@@ -24,7 +26,8 @@ class SomethingNew(object):
         super().__init__()
         self.i = i
         self.something = something
-        
+
+
     def __repr__(self):
         return 'SomethingNew Class'
 
@@ -44,6 +47,7 @@ def clear_memory(collection: List[Something]):
     # you probably need to add some comment here
     collection.clear()
 
+
 def critical_function():
     collection = list()
     for i in range(1, 1024 * 128):
@@ -54,6 +58,7 @@ def critical_function():
 # Here we are suboptimally testing whether two strings are exactly same or not
 # After that we are trying to see if we have a particular character in that string or not
 # Currently the code is suboptimal. Write it in such a way that it takes 1/10 the current time
+
 
 # DO NOT CHANGE THIS PROGRAM
 def compare_strings_old(n):
@@ -66,6 +71,7 @@ def compare_strings_old(n):
     for i in range(n):
         if 'd' in char_list:
             pass
+
 
 # YOU NEED TO CHANGE THIS PROGRAM
 def compare_strings_new(n):
