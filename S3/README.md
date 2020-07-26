@@ -89,9 +89,11 @@ This round method round a number to a given precision in decimal digits.
 ---
 
 ### rounding_away_from_zero
-> Parameters :
+> Parameters : f_num (fraction number)
 
-> Return : 
+> Return : fraction numerator
+
+This function implements rounding away from zero as covered in the class
 
 
 [Back To Top](#session3---numeric-types)
