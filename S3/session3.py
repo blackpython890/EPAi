@@ -1,3 +1,4 @@
+from fractions import Fraction
 def encoded_from_base10(number, base, digit_map):
     '''
     This function returns a string encoding in the "base" for the the "number" using the "digit_map"
@@ -10,8 +11,49 @@ def encoded_from_base10(number, base, digit_map):
     - the digit_map must not have any repeated character, else ValueError
     - the repeating character ValueError message must be relevant
     - you cannot use any in-built functions in the MATH module
+
     '''
-    return '123ABC'
+
+    if base<2 or base>36:
+        raise ValueError("The base is not correct")
+
+    if len(digit_map)<base:
+        raise ValueError
+
+    for i in digit_map:
+        if digit_map.count(i)>1:
+            raise ValueError("There is repeating character in digit_map")
+
+
+    digits=[]
+    while number>0:
+        m=number % base
+        number=number // base
+        digits.insert(0,m)
+    resultant=''
+    for d in digits:
+        resultant += digit_map[d]
+    '''
+    while number<0:
+        m=number % base
+        number=number // base
+        digits.insert(0,m)
+        resultant=''
+    for d in digits:
+        resultant += digit_map[d]
+
+    '''
+    if number<0 :
+        number=-number
+        while number>0:
+            m=number % base
+            number=number // base
+            digits.insert(0,m)
+        resultant=''
+        for d in digits:
+            resultant += digit_map[d]
+        resultant='-'+resultant
+    return resultant
 
 
 def float_equality_testing(a, b):
@@ -21,7 +63,14 @@ def float_equality_testing(a, b):
         - rel_tol = 1e-12
         - abs_tol = 1e-05
     '''
-    return a == b
+    rel_tol=1e-12
+    abs_tol=1e-05
+    tol=max(rel_tol*(max(abs(a),abs(b))),abs_tol)
+    if abs(a-b) < tol:
+        d=True
+    else:
+        d=False
+    return d
 
 
 def manual_truncation_function(f_num):
@@ -30,6 +79,7 @@ def manual_truncation_function(f_num):
     It must check whether f_num is of correct type before proceed. You can use inbuilt constructors like int, float, etc
     '''
     f_num = f_num.__trunc__()
+
     return f_num
 
 def manual_rounding_function(f_num):
@@ -38,6 +88,7 @@ def manual_rounding_function(f_num):
     expected to write your one manually.
     '''
     f_num = f_num.__round__()
+
     return f_num
 
 def rounding_away_from_zero(f_num):
