@@ -20,8 +20,6 @@ To pass the test cases 5 functions are desinged
 
 
 
-bin(
-hex(
 
 
 ### encoded_from_base10
@@ -40,7 +38,8 @@ Below conditions are required or must posses:
 1. Function must return proper encoding for all negative "numbers" (hint: this is equal to encoding for +ve number, but with - sign added).
 1. digit_map must not have any repeated character, else ValueError.
 1. Repeating character ValueError message must be relevant
-1. ***You cannot use any in-built functions in the MATH module***
+1. ***You cannot use any in-built functions in the MATH module***.
+1. Inbuilt functions like 'bin(' , 'hex(' is strictly prohibited.
 
 
 
