@@ -38,6 +38,8 @@ Below conditions are required or must posses:
 
 
 
+---
+
 ### float_equality_testing
 > Parameters : a , b (Two fractions number)
 
@@ -54,6 +56,10 @@ Assumptions
 
 
 
+[Back To Top](#session3---numeric-types)
+
+---
+
 ### manual_truncation_function
 > Parameter : f_num (number).
 
@@ -63,6 +69,11 @@ Assumptions
  If so one of the test cases will fail.
  ***trunc***  method return the Real value of number truncated to an integer.
  
+ 
+ 
+ [Go To Bottom](#results)
+---
+
 
 ### manual_rounding_function
 > Parameter : f_num (number).
@@ -74,6 +85,7 @@ If so one of the test cases will fail.
 This round method round a number to a given precision in decimal digits.
 
 
+---
 
 ### rounding_away_from_zero
 > Parameters :
@@ -84,6 +96,7 @@ This round method round a number to a given precision in decimal digits.
 [Back To Top](#session3---numeric-types)
 
 ---
+
 ### Files Links
 - Code - [here](https://github.com/jagatabhay/EPAi/blob/master/S3/session3.py)
 - Test Cases - [here](https://github.com/jagatabhay/EPAi/blob/master/S3/test_session3.py)
