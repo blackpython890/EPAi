@@ -19,8 +19,9 @@ To pass the test cases 5 functions are desinged
 ---
 
 ### encoded_from_base10
-> Parameters :  number, base, digit_map . Return String
-This function returns a string encoding in the "base" for the the "number" using the "digit_map".
+> Parameters :  number, base, digit_map . Return String.
+
+> This function returns a string encoding in the "base" for the the "number" using the "digit_map".
 
 
 Below conditions are required or must posses:
