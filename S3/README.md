@@ -19,7 +19,9 @@ To pass the test cases 5 functions are desinged
 ---
 
 ### encoded_from_base10
-> Parameters :  number, base, digit_map . Return String.
+> Parameters :  number, base, digit_map. 
+
+> Return String.
 
 > This function returns a string encoding in the "base" for the the "number" using the "digit_map".
 
@@ -37,14 +39,34 @@ Below conditions are required or must posses:
 
 
 ### float_equality_testing
+> Parameters : a , b (Two fractions)
+
+> Return Type Boolean
+
+This function emulates the ***isclose**** method from the ***math*** module , with a restriction of not importing ***math*** module.
+Return ***True*** if the values a and b are close to each other and ***False*** otherwise.
+Whether or not two values are considered close is determined according to given absolute and relative tolerances. (mentioned below)
+If so one of the test will fail.
+
+Assumptions
+1. Relative Tolerance (rel_tol) : 1e-12
+1. Absolute Tolerance (abs_tol) : 1e-5
+
+
 
 ### manual_truncation_function
+> Parameter : f_num (number)
+
+> Return : formatted number
+
+ This function emulates python's ***trunc*** method from ***math*** , with a restriction of 
 
 ### manual_rounding_function
 
 ### rounding_away_from_zero
 
 
+[Back To Top](#session3---numeric-types)
 
 ---
 ### Files Links
