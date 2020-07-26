@@ -119,8 +119,9 @@ This function implements rounding away from zero as covered in the class
 
 Respective modified methods are implemented and files links are shared below.
 
-- Code - [here](https://github.com/jagatabhay/EPAi/blob/master/S3/session3.py)
-- Test Cases - [here](https://github.com/jagatabhay/EPAi/blob/master/S3/test_session3.py)
+- Code - [Method Implementation](https://github.com/jagatabhay/EPAi/blob/master/S3/session3.py)
+- Test Cases - [.py File](https://github.com/jagatabhay/EPAi/blob/master/S3/test_session3.py)
+- Colab -  [Test Results](https://github.com/jagatabhay/EPAi/blob/master/S3/Session_3.ipynb)
 
 
 ### Results
