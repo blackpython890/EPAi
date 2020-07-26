@@ -39,7 +39,7 @@ Below conditions are required or must posses:
 
 
 ### float_equality_testing
-> Parameters : a , b (Two fractions)
+> Parameters : a , b (Two fractions number)
 
 > Return Type Boolean
 
@@ -55,17 +55,30 @@ Assumptions
 
 
 ### manual_truncation_function
-> Parameter : f_num (number)
+> Parameter : f_num (number).
 
-> Return : formatted number
+> Return : formatted number.
 
  This function emulates python's ***trunc*** method from ***math*** , with a restriction of not importing ***math*** module.
  If so one of the test cases will fail.
  ***trunc***  method return the Real value of number truncated to an integer.
+ 
 
 ### manual_rounding_function
+> Parameter : f_num (number).
+
+> Return : formatted number.
+
+This function emulates python's inbuild ***round*** function. You are not allowed to use ROUND function.
+If so one of the test cases will fail.
+This round method round a number to a given precision in decimal digits.
+
+
 
 ### rounding_away_from_zero
+> Parameters :
+
+> Return : 
 
 
 [Back To Top](#session3---numeric-types)
