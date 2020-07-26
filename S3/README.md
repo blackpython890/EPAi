@@ -18,6 +18,24 @@ To pass the test cases 5 functions are desinged
 
 ---
 
+int
+encoded_from_base10
+digit_map
+ValueError
+math
+isclose
+absolute
+relative
+tolerance
+bin(
+hex(
+round
+truncation
+error
+equality
+zero
+away
+
 ### encoded_from_base10
 > Parameters :  number, base, digit_map. 
 
