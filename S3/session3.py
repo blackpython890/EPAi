@@ -21,7 +21,6 @@ def float_equality_testing(a, b):
         - rel_tol = 1e-12
         - abs_tol = 1e-05
     '''
-    
     return a == b
 
 
