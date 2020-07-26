@@ -149,5 +149,8 @@ Respective modified methods are implemented and files links are shared below.
 | 19 | Check all emaultes for zero  | Pass    |
 
  
+---
+
+
 
 [Back To Top](#session3---numeric-types)
