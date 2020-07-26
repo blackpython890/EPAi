@@ -4,7 +4,7 @@
 - Mail : [jagatabhay@gmail.com](jagatabhay@gmail.com)
 
 
-# Session2 - Object Mutability and Interning
+# Session3 - Numeric Types
 
   
  
@@ -24,7 +24,7 @@
 | 12 |  Repeating digits in digit map | Pass |
 | 13 | Repeating digits valueerror should provide relevant message  | Pass    |
 | 14 | Emulate inbuilt math.isclose()  | Pass |
-| 15 | Restrict math module  | Pass    |
+| 15 | Restrict usage of inbuilt function  | Pass    |
 | 16| Import fraction module | Pass |
 | 17 | Emulate inbuilt math.trunc()  | Pass    |
 | 18 | Emulate inbuilt math.round  | Pass |
@@ -32,3 +32,4 @@
 
  
 
+[Back To Top](#session3---numeric-types)
