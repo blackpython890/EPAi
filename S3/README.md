@@ -19,6 +19,21 @@ To pass the test cases 5 functions are desinged
 ---
 
 ### encoded_from_base10
+> Parameters :  number, base, digit_map . Return String
+This function returns a string encoding in the "base" for the the "number" using the "digit_map".
+
+
+Below conditions are required or must posses:
+1. 2 <= base <= 36 else raise ValueError.
+1. Invalid base ValueError must have relevant information.
+1. Digit_map must have sufficient length to represent the base.
+1. Function must return proper encoding for all base ranges between 2 to 36 (including).
+1. Function must return proper encoding for all negative "numbers" (hint: this is equal to encoding for +ve number, but with - sign added).
+1. digit_map must not have any repeated character, else ValueError.
+1. Repeating character ValueError message must be relevant
+1. ***You cannot use any in-built functions in the MATH module***
+
+
 
 ### float_equality_testing
 
