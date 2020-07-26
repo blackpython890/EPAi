@@ -67,7 +67,7 @@ Assumptions
 ### manual_truncation_function
 > Parameter : f_num (number).
 
-> Return : formatted number.
+> Return : formatted truncated number.
 
  This function emulates python's ***trunc*** method from ***math*** , with a restriction of not importing ***math*** module.
  
@@ -85,7 +85,7 @@ Assumptions
 ### manual_rounding_function
 > Parameter : f_num (number).
 
-> Return : formatted number.
+> Return : formatted round number.
 
 This function emulates python's inbuild ***round*** function. You are not allowed to use ROUND function.
 
