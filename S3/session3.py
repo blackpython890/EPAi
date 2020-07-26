@@ -10,7 +10,6 @@ def encoded_from_base10(number, base, digit_map):
     - the digit_map must not have any repeated character, else ValueError
     - the repeating character ValueError message must be relevant
     - you cannot use any in-built functions in the MATH module
-
     '''
     return '123ABC'
 
@@ -22,6 +21,7 @@ def float_equality_testing(a, b):
         - rel_tol = 1e-12
         - abs_tol = 1e-05
     '''
+    
     return a == b
 
 
@@ -30,7 +30,7 @@ def manual_truncation_function(f_num):
     This function emulates python's MATH.TRUNC method. It ignores everything after the decimal point. 
     It must check whether f_num is of correct type before proceed. You can use inbuilt constructors like int, float, etc
     '''
-
+    f_num = f_num.__trunc__()
     return f_num
 
 def manual_rounding_function(f_num):
@@ -38,7 +38,7 @@ def manual_rounding_function(f_num):
     This function emulates python's inbuild ROUND function. You are not allowed to use ROUND function, but
     expected to write your one manually.
     '''
-
+    f_num = f_num.__round__()
     return f_num
 
 def rounding_away_from_zero(f_num):
