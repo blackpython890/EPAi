@@ -21,7 +21,7 @@ To pass the test cases 5 functions are desinged
 ### encoded_from_base10
 > Parameters :  number, base, digit_map. 
 
-> Return String.
+> Return : String.
 
 > This function returns a string encoding in the "base" for the the "number" using the "digit_map".
 
@@ -43,7 +43,7 @@ Below conditions are required or must posses:
 ### float_equality_testing
 > Parameters : a , b (Two fractions number)
 
-> Return Type Boolean
+> Return : Boolean
 
 This function emulates the ***isclose**** method from the ***math*** module , with a restriction of not importing ***math*** module.
 
@@ -108,7 +108,10 @@ This function implements rounding away from zero as covered in the class
 
 ---
 
-### Files Links
+### Files
+
+Respective modified methods are implemented and files links are shared below.
+
 - Code - [here](https://github.com/jagatabhay/EPAi/blob/master/S3/session3.py)
 - Test Cases - [here](https://github.com/jagatabhay/EPAi/blob/master/S3/test_session3.py)
 
