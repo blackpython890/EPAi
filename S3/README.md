@@ -44,9 +44,9 @@ Below conditions are required or must posses:
 > Return Type Boolean
 
 This function emulates the ***isclose**** method from the ***math*** module , with a restriction of not importing ***math*** module.
-Return ***True*** if the values a and b are close to each other and ***False*** otherwise.
+If so one of the test cases will fail.
+***isclose*** methods returnd ***True*** if the values a and b are close to each other and ***False*** otherwise.
 Whether or not two values are considered close is determined according to given absolute and relative tolerances. (mentioned below)
-If so one of the test will fail.
 
 Assumptions
 1. Relative Tolerance (rel_tol) : 1e-12
@@ -59,7 +59,9 @@ Assumptions
 
 > Return : formatted number
 
- This function emulates python's ***trunc*** method from ***math*** , with a restriction of 
+ This function emulates python's ***trunc*** method from ***math*** , with a restriction of not importing ***math*** module.
+ If so one of the test cases will fail.
+ ***trunc***  method return the Real value of number truncated to an integer.
 
 ### manual_rounding_function
 
