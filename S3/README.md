@@ -6,9 +6,16 @@
 
 # Session3 - Numeric Types
 
+
+### Files Links
+- Code - [here](https://github.com/jagatabhay/EPAi/blob/master/S3/session3.py)
+- Test Cases - [here](https://github.com/jagatabhay/EPAi/blob/master/S3/test_session3.py)
+
+
+### Results
   
  
-| First Header  | Second Header | Outputs |
+| Serial Number  | Test Cases | Outputs |
 | ------------- | ------------- |-------- |
 |  1 | README File Exists  | Pass    |
 | 2 |  READEME contain desciption | Pass |
