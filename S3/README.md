@@ -18,23 +18,11 @@ To pass the test cases 5 functions are desinged
 
 ---
 
-int
-encoded_from_base10
-digit_map
-ValueError
-math
-isclose
-absolute
-relative
-tolerance
+
+
 bin(
 hex(
-round
-truncation
-error
-equality
-zero
-away
+
 
 ### encoded_from_base10
 > Parameters :  number, base, digit_map. 
@@ -56,6 +44,8 @@ Below conditions are required or must posses:
 
 
 
+
+
 ---
 
 ### float_equality_testing
@@ -67,7 +57,7 @@ This function emulates the ***isclose**** method from the ***math*** module , wi
 
 If so one of the test cases will fail.
 
-***isclose*** methods returnd ***True*** if the values a and b are close to each other and ***False*** otherwise.
+***isclose*** methods returnd ***True*** if the values a and b are close ( or equality ) to each other and ***False*** otherwise.
 
 Whether or not two values are considered close is determined according to given absolute and relative tolerances. (mentioned below).
 
@@ -91,7 +81,7 @@ Assumptions
  
  If so one of the test cases will fail.
  
- ***trunc***  method return the Real value of number truncated to an integer.
+ ***trunc***  method performs  truncation and return the real value of number ( int )
  
  
  
