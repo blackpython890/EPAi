@@ -1,9 +1,6 @@
-import pytest
-import os
-import session4
-import inspect
-import re
-import random
+import pytest , os , session4 , inspect , re , random
+from decimal import Decimal
+
 
 README_CONTENT_CHECK_FOR = ['__and__' ,
                             '__or__',
@@ -54,7 +51,7 @@ def test_readme_for_formatting():
     readme = open('README.md','r')
     content = readme.read().split()
     readme.close()
-    assert content.count('#') > 10 , "Kindly format the README.md"
+    assert content.count('#') >= 10 , "Kindly format the README.md"
 
 
 #5
@@ -68,7 +65,7 @@ def test_identation():
 
 #6
 def test_funcation_had_cap_letter():
-    functions = inspect.getmembers(session4, inspect.isfunction() )
+    functions = inspect.getmembers(session4, inspect.isfunction )
     for function in function:
         assert len(re.findall('([A-Z])', function[0])) == 0, "You have used Capital letter(s) in your function names"
 
@@ -79,17 +76,43 @@ def test_repr():
 
 
 #8
-def test_str();
+def test_str():
     assert 'Object at' not in session4.__str__() , "Kindly return meaningful message from __str__"
 
 
 #9 Less than
 def test_lt_check():
     a = random.uniform(-1, 1)
-    assert session4.__lt__(a) , "__lt__ is not properly implementated "
+    assert session4.__lt__(a) , "__lt__ is not implementated"
+    assert session4.__le__(a) , "__le__ is not implementated"
 
 
-#10
-def test_le_check():
-    a = randm.uniform(-1,1)
-    assert session4.__le__(a) , "__le__ is not properly implemented"
+#10 Less than and equals to
+def test_function_exist_check():
+    a = random.uniform(-1,1)
+    assert session4.__eq__(a) , "__eq__ is not implemented"
+    assert session4.__ge__(a) , "__ge__ is not implementated"
+    assert session4.__gt__(a) , " __gt__ is not implementated"
+    assert session4.__and__(a) , "__add__ is not implementated"
+
+
+#11 NotImplementedError Check 
+def test_notimplementederror_check():
+    with pytest.raises(NotImplementedError):
+        session4.__le__('TSAI') 
+        session4.__lt__('TSAI')
+        session4.__gt__('TSAI')
+        session4.__ge__('TSAI')
+        session4.__eq__('TSAI')
+        session4.__add__('TSAI')
+        session4.__sqrt__('TSAI')
+
+
+
+#12 Decimal sqrt check with class Qualean
+def test_sqrtcheck_with_Decimal():
+    a = random.uniform(-1,1)
+    assert session4.__sqrt__(a) == Decimal(a).sqrt() , "session4.__sqrt__(a) == Decimal(a).sqrt() returns different value"
+
+
+#13
