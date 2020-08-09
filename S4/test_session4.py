@@ -73,14 +73,14 @@ def test_funcation_had_cap_letter():
 
 #7
 def test_repr():
-    a = random.uniform(-1,1)
+    a = random.choice([-1,0,1])
     q = session4.Qualean(a)
     assert 'Object at' not in q.__repr__() , "Kindly return meaningful message from __repr__"
 
 
 #8
 def test_str():
-    a = random.uniform(-1,1)
+    a = random.choice([-1,0,1])
     q = session4.Qualean(a)
     assert 'Object at' not in q.__str__() , "Kindly return meaningful message from __str__"
 
@@ -90,9 +90,20 @@ def test_str():
 def test_lt_check():
     q1 = session4.Qualean(random.choice([-1,0,1]))
     q2 = session4.Qualean(random.choice([-1,0,1]))
-    assert q1 < q2 , 'Test'
+    assert q1 < q2 
 
 
+#10
+def test_mul_check():
+    q = session4.Qualean(random.choice([-1 , 0 , 1])
+    assert q.__mul__() == 
+
+
+#11
+def test_sqrtcheck_with_Decimal():
+    a = random.choice([-1,0,1])
+    q = session4.Qualean(a)
+    assert q.__sqrt__() == Decimal(a).sqrt() , "session4.Qualean.__sqrt__(a) == Decimal(a).sqrt() returns different value"
 
 
 
