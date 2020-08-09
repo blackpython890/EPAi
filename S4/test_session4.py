@@ -72,54 +72,54 @@ def test_funcation_had_cap_letter():
 
 #7
 def test_repr():
-    assert 'Object at' not in session4.__repr__() , "Kindly return meaningful message from __repr__"
+    assert 'Object at' not in session4.Qualean.__repr__() , "Kindly return meaningful message from __repr__"
 
 
 #8
 def test_str():
-    assert 'Object at' not in session4.__str__() , "Kindly return meaningful message from __str__"
+    assert 'Object at' not in session4.Qualean.__str__() , "Kindly return meaningful message from __str__"
 
 
 
 #9 Less than and equals to
 def test_function_exist_check():
     a = random.uniform(-1,1)
-    assert session4.__lt__(a) , "__lt__ is not implementated"
-    assert session4.__le__(a) , "__le__ is not implementated"
-    assert session4.__eq__(a) , "__eq__ is not implemented"
-    assert session4.__ge__(a) , "__ge__ is not implementated"
-    assert session4.__gt__(a) , " __gt__ is not implementated"
-    assert session4.__or__() , "__or__ is not implemented"
-    assert session4.__bool__() , "__bool__ is not implementated"
-    assert session4.__float__(a) , "__float__ is not implementated"
-    assert session4.__add__(a) , "__add__ is not implementated"
-    assert session4.__mul__(a) , "__mul__ is not implemented"
-    assert session4.__and__(a) , "__and__ is not implemented"
+    assert session4.Qualean.__lt__(a) , "__lt__ is not implementated"
+    assert session4.Qualean.__le__(a) , "__le__ is not implementated"
+    assert session4.Qualean__eq__(a) , "__eq__ is not implemented"
+    assert session4.Qualean__ge__(a) , "__ge__ is not implementated"
+    assert session4.Qualean.__gt__(a) , " __gt__ is not implementated"
+    assert session4.Qualean.__or__() , "__or__ is not implemented"
+    assert session4.Qualean.__bool_._() , "__bool__ is not implementated"
+    assert session4.Qualean.__float__(a) , "__float__ is not implementated"
+    assert session4.Qualean.__add__(a) , "__add__ is not implementated"
+    assert session4.Qualean.__mul__(a) , "__mul__ is not implemented"
+    assert session4.Qualean.__and__(a) , "__and__ is not implemented"
 
 
 
 #10 NotImplementedError Check 
 def test_notimplementederror_check():
     with pytest.raises(NotImplementedError):
-        session4.__le__('TSAI') 
-        session4.__lt__('TSAI')
-        session4.__gt__('TSAI')
-        session4.__ge__('TSAI')
-        session4.__eq__('TSAI')
-        session4.__or__('TSAI')
-        session4.__bool__('TSAI')
-        session4.__float__('TSAI')
-        session4.__add__('TSAI')
-        session4.__sqrt__('TSAI')
-        session4.__mul__('TSAI')
-        session4.__and__('TSAI')
+        session4.Qualean.__le__('TSAI') 
+        session4.Qualean.__lt__('TSAI')
+        session4.Qualean.__gt__('TSAI')
+        session4.Qualean.__ge__('TSAI')
+        session4.Qualean.__eq__('TSAI')
+        session4.Qualean.__or__('TSAI')
+        session4.Qualean.__bool__('TSAI')
+        session4.Qualean.__float__('TSAI')
+        session4.Qualean.__add__('TSAI')
+        session4.Qualean.__sqrt__('TSAI')
+        session4.Qualean.__mul__('TSAI')
+        session4.Qualean.__and__('TSAI')
 
 
 
 #11 Decimal sqrt check with class Qualean
 def test_sqrtcheck_with_Decimal():
     a = random.uniform(-1,1)
-    assert session4.__sqrt__(a) == Decimal(a).sqrt() , "session4.__sqrt__(a) == Decimal(a).sqrt() returns different value"
+    assert session4.Qualean.__sqrt__(a) == Decimal(a).sqrt() , "session4.Qualean.__sqrt__(a) == Decimal(a).sqrt() returns different value"
 
 
 #12
