@@ -1,6 +1,8 @@
 # Session 4 
----
-## Objective
+
+
+
+# Objective
 - Write a Qualean class that is inspired by Boolean+Quantum concepts. We can assign it only 3 possible real states. True, False, and Maybe (1, 0, -1) but it internally picks an imaginary state. The moment you assign it a real number, it immediately finds an imaginary number random.uniform(-1, 1) and multiplies with it and stores that number internally after using Bankers rounding to 10th decimal place.  
  
 - It implements these functions (with exactly the same names) 
@@ -14,14 +16,14 @@
 - Write a test file, that tests all of the functions mentioned above + the other basic ones 
 - Test file must contain at least 25 tests
 
----
-## Files
+
+# Files
  - Test File : [PyTest file](https://github.com/jagatabhay/EPAi/blob/master/S4/test_session4.py)
  - Code: [Method Implemantation](https://github.com/jagatabhay/EPAi/blob/master/S4/session4.py)
  - colab File: [![](https://github.com/jagatabhay/TSAI/blob/master/openincolablogo.JPG)]()
 ---
 
-## Test Cases Results
+# Test Cases Results
 
 | Serial No  | Test Case | Result |
 | ---------- | --------- | ------ |
@@ -38,6 +40,8 @@
 
 ---
 
-### Author Info
+# Author Info
 - Email : [jagatabhay@gmail.com](#jagatabhay@gmail.com)
 - [![Linkedin](https://github.com/jagatabhay/TSAI/blob/master/logo.png)](https://www.linkedin.com/in/jagatnandan-prasad-240042129/)
+
+# End Of Readme
