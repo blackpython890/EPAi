@@ -95,8 +95,9 @@ def test_lt_check():
 
 #10
 def test_mul_check():
-    q = session4.Qualean(random.choice([-1 , 0 , 1])
-    assert q.__mul__() == 
+    q1 = session4.Qualean(random.choice([-1 , 0 , 1])
+    q2 = session4.Qualean(random.choice([-1 , 0 , 1])
+    assert q1*q2
 
 
 #11
@@ -104,8 +105,6 @@ def test_sqrtcheck_with_Decimal():
     a = random.choice([-1,0,1])
     q = session4.Qualean(a)
     assert q.__sqrt__() == Decimal(a).sqrt() , "session4.Qualean.__sqrt__(a) == Decimal(a).sqrt() returns different value"
-
-
 
 
 
