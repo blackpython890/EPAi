@@ -57,10 +57,11 @@ def test_readme_for_formatting():
 #5
 def test_identation():
     lines = inspect.getsource(session4)
-    spaces = re.findall('\n +',lines)
+    spaces = re.findall('\n +.', lines)
     for space in spaces:
-        assert len(space) % 4 == 2, "Your script contains misplaced indentations"
-        assert len(re.sub(r'[^ ]', '', space)) % 4 == 0, "Your code indentation does not follow PEP8 guidelines" 
+        assert re.search('[a-zA-Z#@\'\"]', space), "Your code intentation does not follow PEP8 guidelines"
+        assert len(re.sub(r'[a-zA-Z#@\n\"\']', '', space)) % 4 == 0, \
+        "Your code intentation does not follow PEP8 guidelines" 
 
 
 #6
@@ -87,7 +88,7 @@ def test_str():
 
 
 def test_lt_check():
-    a.random.choice(-1,1)
+    a = random.choice([-1,0,1])
     q1 = session4.Qualean(a)
     q2 = session4.Qualean(a)
     assert q1 < q2 , 'Test'
