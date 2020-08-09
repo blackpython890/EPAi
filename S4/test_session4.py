@@ -49,7 +49,7 @@ def test_readme_proper_desscription():
 #4
 def test_readme_for_formatting():
     readme = open('README.md','r')
-    content = readme.read().split()
+    content = readme.read()
     readme.close()
     assert content.count('#') >= 5 , "Kindly format the README.md"
 
@@ -86,7 +86,7 @@ def test_str():
 
 
 
-
+#9
 def test_lt_check():
     a = random.choice([-1,0,1])
     q1 = session4.Qualean(a)
