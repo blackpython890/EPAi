@@ -88,9 +88,8 @@ def test_str():
 
 #9
 def test_lt_check():
-    a = random.choice([-1,0,1])
-    q1 = session4.Qualean(a)
-    q2 = session4.Qualean(a)
+    q1 = session4.Qualean(random.choice([-1,0,1]))
+    q2 = session4.Qualean(random.choice([-1,0,1]))
     assert q1 < q2 , 'Test'
 
 
