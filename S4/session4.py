@@ -36,7 +36,7 @@ class Qualean:
         if  isinstance(other,Qualean):
             if self.k == other.k :
                 return True
-            else
+            else:
                return False
         else:
             return NotImplementedError
