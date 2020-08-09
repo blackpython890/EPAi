@@ -72,12 +72,14 @@ def test_funcation_had_cap_letter():
 
 #7
 def test_repr():
-    assert 'Object at' not in session4.Qualean.__repr__() , "Kindly return meaningful message from __repr__"
+    a = random.uniform(-1,1)
+    assert 'Object at' not in session4.Qualean.__repr__(a) , "Kindly return meaningful message from __repr__"
 
 
 #8
 def test_str():
-    assert 'Object at' not in session4.Qualean.__str__() , "Kindly return meaningful message from __str__"
+    a = random.uniform(-1,1)
+    assert 'Object at' not in session4.Qualean.__str__(a) , "Kindly return meaningful message from __str__"
 
 
 
