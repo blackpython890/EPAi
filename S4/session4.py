@@ -5,6 +5,7 @@ import weakref
 import random
 import math
 
+
 class Qualean:
 
     def __init__(self,choice):
@@ -22,7 +23,7 @@ class Qualean:
 
     def __lt__(self, other):
         if isinstance(other, Qualean):
-            if self.k < other.k
+            if self.k < other.k:
                 return True
             else:
                 return False
@@ -33,43 +34,55 @@ class Qualean:
 
     def __eq__(self,other):
         if  isinstance(other,Qualean):
-            return self.k==other.k 
+            if self.k == other.k :
+                return True
+            else
+               return False
         else:
-            return False
+            return NotImplementedError
 
 
     def __le__(self,other):
         if isinstance(other,Qualean):
-            return self.k <= other.k
+            if self.k < other.k:
+                return True
+            else:
+                return False
         else:
             raise NotImplementedError
 
 
     def __gt__(self,other):
         if isinstance(other,Qualean):
-            return self.k > other.k
+            if self.k > other.k:
+                return True
+            else:
+                return False
         else:
             raise NotImplementedError
 
 
     def __ge__(self,other):
         if isinstance(other,Qualean):
-            return self.k >=other.k
+            if self.k >= other.k:
+                return True
+            else:
+                return False
         else:
             raise NotImplementedError
 
 
     def __add__(self,other):
         if isinstance(other,Qualean):
-            total=self.k+other.k
+            total = self.k + other.k
             return total
         else:
             raise NotImplementedError
 
 
-    def __sqrt__(self,other):
-        if isinstance(other,Qualean):
-            total=math.sqrt(other.k)
+    def __sqrt__(self):
+        if isinstance(self,Qualean):
+            total = math.sqrt(self.k)
             return total
         else:
             raise NotImplementedError
@@ -77,7 +90,7 @@ class Qualean:
 
     def __mul__(self,other):
         if isinstance(other,Qualean):
-            total=self.k*other.k
+            total = self.k * other.k
             return total
         else:
             raise NotImplementedError
@@ -98,13 +111,11 @@ class Qualean:
             raise NotImplementedError
 
 
-
     def __bool__(self):
         if isinstance(self,Qualean):
             return bool(self.k)
         else:
             raise NotImplementedError
-
 
 
     def __float__(self):
