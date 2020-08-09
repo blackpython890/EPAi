@@ -73,13 +73,15 @@ def test_funcation_had_cap_letter():
 #7
 def test_repr():
     a = random.uniform(-1,1)
-    assert 'Object at' not in session4.Qualean.__repr__(a) , "Kindly return meaningful message from __repr__"
+    q = session4.Qualean(a)
+    assert 'Object at' not in q.__repr__() , "Kindly return meaningful message from __repr__"
 
 
 #8
 def test_str():
     a = random.uniform(-1,1)
-    assert 'Object at' not in session4.Qualean.__str__(a) , "Kindly return meaningful message from __str__"
+    q = session4.Qualean(a)
+    assert 'Object at' not in q.__str__() , "Kindly return meaningful message from __str__"
 
 
 
@@ -121,7 +123,8 @@ def test_notimplementederror_check():
 #11 Decimal sqrt check with class Qualean
 def test_sqrtcheck_with_Decimal():
     a = random.uniform(-1,1)
-    assert session4.Qualean.__sqrt__(a) == Decimal(a).sqrt() , "session4.Qualean.__sqrt__(a) == Decimal(a).sqrt() returns different value"
+    q = session4.Qualean(a)
+    assert q.__sqrt__() == Decimal(a).sqrt() , "session4.Qualean.__sqrt__(a) == Decimal(a).sqrt() returns different value"
 
 
 #12
