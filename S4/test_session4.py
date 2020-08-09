@@ -89,12 +89,12 @@ def test_function_exist_check():
     assert session4.__eq__(a) , "__eq__ is not implemented"
     assert session4.__ge__(a) , "__ge__ is not implementated"
     assert session4.__gt__(a) , " __gt__ is not implementated"
-    assert session4.__mul__(a) , "__mul__ is not implemented"
-    assert session4.__and__(a) , "__and__ is not implemented"
     assert session4.__or__(a) , "__or__ is not implemented"
     assert session4.__bool__(a) , "__bool__ is not implementated"
     assert session4.__float__(a) , "__float__ is not implementated"
     assert session4.__add__(a) , "__add__ is not implementated"
+    assert session4.__mul__(a) , "__mul__ is not implemented"
+    assert session4.__and__(a) , "__and__ is not implemented"
 
 
 
@@ -106,13 +106,13 @@ def test_notimplementederror_check():
         session4.__gt__('TSAI')
         session4.__ge__('TSAI')
         session4.__eq__('TSAI')
-        session4.__mul__('TSAI')
-        session4.__and__('TSAI')
         session4.__or__('TSAI')
         session4.__bool__('TSAI')
         session4.__float__('TSAI')
         session4.__add__('TSAI')
         session4.__sqrt__('TSAI')
+        session4.__mul__('TSAI')
+        session4.__and__('TSAI')
 
 
 
