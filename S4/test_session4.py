@@ -51,7 +51,7 @@ def test_readme_for_formatting():
     readme = open('README.md','r')
     content = readme.read().split()
     readme.close()
-    assert content.count('#') >= 10 , "Kindly format the README.md"
+    assert content.count('#') >= 5 , "Kindly format the README.md"
 
 
 #5
@@ -66,7 +66,7 @@ def test_identation():
 #6
 def test_funcation_had_cap_letter():
     functions = inspect.getmembers(session4, inspect.isfunction )
-    for function in function:
+    for function in functions:
         assert len(re.findall('([A-Z])', function[0])) == 0, "You have used Capital letter(s) in your function names"
 
 
@@ -93,7 +93,7 @@ def test_function_exist_check():
     assert session4.__eq__(a) , "__eq__ is not implemented"
     assert session4.__ge__(a) , "__ge__ is not implementated"
     assert session4.__gt__(a) , " __gt__ is not implementated"
-    assert session4.__and__(a) , "__add__ is not implementated"
+    assert session4.__add__(a) , "__add__ is not implementated"
 
 
 #11 NotImplementedError Check 
