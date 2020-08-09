@@ -85,6 +85,35 @@ def test_str():
 
 
 
+
+def test_lt_check():
+    a.random.choice(-1,1)
+    q1 = session4.Qualean(a)
+    q2 = session4.Qualean(a)
+    assert q1 < q2 , 'Test'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
 #9 Less than and equals to
 def test_function_exist_check():
     a = random.uniform(-1,1)
@@ -127,4 +156,4 @@ def test_sqrtcheck_with_Decimal():
     assert q.__sqrt__() == Decimal(a).sqrt() , "session4.Qualean.__sqrt__(a) == Decimal(a).sqrt() returns different value"
 
 
-#12
+#12'''
