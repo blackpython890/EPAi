@@ -9,7 +9,7 @@ class Qualean:
 
     def __init__(self,choice):
         self.choice = choice
-        self.k = round(choice*(random.uniform(-1,1)))
+        self.k = round(choice*(random.uniform(-1,1)),10)
 
 
     def __str__(self):
@@ -22,7 +22,10 @@ class Qualean:
 
     def __lt__(self, other):
         if isinstance(other, Qualean):
-            return self.k < other.k
+            if self.k < other.k
+                return True
+            else:
+                return False
         else:
             print("I was called")
             raise NotImplementedError
@@ -37,7 +40,7 @@ class Qualean:
 
     def __le__(self,other):
         if isinstance(other,Qualean):
-            return self.k <=other.k
+            return self.k <= other.k
         else:
             raise NotImplementedError
 

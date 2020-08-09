@@ -88,15 +88,15 @@ def test_str():
 
 #9
 def test_lt_check():
-    q1 = session4.Qualean(random.choice([-1,0,1]))
-    q2 = session4.Qualean(random.choice([-1,0,1]))
-    assert q1 < q2 
+    q1 = session4.Qualean(0)
+    q2 = session4.Qualean(1)
+    assert q1.__lt__(q2) is bool
 
 
 #10
 def test_mul_check():
-    q1 = session4.Qualean(random.choice([-1 , 0 , 1])
-    q2 = session4.Qualean(random.choice([-1 , 0 , 1])
+    q1 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    q2 = session4.Qualean(random.choice([-1 , 0 , 1]))
     assert q1*q2
 
 
