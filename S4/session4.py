@@ -132,4 +132,5 @@ class Qualean:
             return self.k and other.k
         else:
             raise NotImplementedError
+            print("Hello")
 '''
